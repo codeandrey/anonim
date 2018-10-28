@@ -1,12 +1,7 @@
 $font-stack: -apple-system, BlinkMacSystemFont,Roboto,'Open Sans','Helvetica Neue',sans-serif;
 
 @import '../../node_modules/slick-carousel/slick/slick.scss';
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/Roboto-Regular.ttf);
-}
+
 * {
   box-sizing: border-box;
 }
@@ -15,7 +10,10 @@ ul{
   padding: 0;
 }
 body {
-  font-family: $font-stack;
+  font-family: Hind;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
   .btn {
     width: 200px;
     height: 50px;
@@ -363,14 +361,14 @@ body {
     }
   }
   hr {
-    width: 1160px;
+    max-width: 1160px;
     margin-bottom: 43px; 
   }
  
   .inner {
     display: flex;
     justify-content: space-between;
-    width: 1160px;
+    max-width: 1160px;
     margin: auto;
   }
  
