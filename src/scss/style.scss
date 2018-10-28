@@ -1,0 +1,446 @@
+$font-stack: -apple-system, BlinkMacSystemFont,Roboto,'Open Sans','Helvetica Neue',sans-serif;
+
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $font-stack;
+  .btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 100px;
+    font-family: Hind;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    &-red{
+      background-color: #ff0d35;
+      color: #ffffff;
+    }
+  }
+  header{
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+   
+    .bg {
+      width: 100%;
+      max-height: 450px;
+      object-fit: contain;
+
+    }
+    .header-top {
+      position: absolute;
+      top: 22px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    .author-img {
+      position: absolute;
+    }
+    .author-pic {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+    }
+    .btn.btn-red {
+      margin-left: auto;
+      margin-right: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+  .section-main{
+    max-width: 960px;
+    background-color: #ffffff;
+    margin: -120px auto 0; 
+    position: relative;
+    padding: 60px 100px 140px;
+
+    .post-info {
+      height: 24px;
+      margin-top: 28px;
+      display: flex;
+    }
+
+    .post-date {
+      align-items: center;
+      display: flex;
+      font-family: Hind;
+      font-size: 16px;
+      line-height: 1.25;
+      color: #868685;
+    }
+
+    .shape {
+      margin-right: 15px;
+    }
+
+    .post-title {
+      max-width: 600px;
+      font-family: Teko;
+      font-size: 56px;
+      font-weight: 600;
+      font-style: normal;
+      line-height: 1.07;
+      color: #000000;
+    }
+ 
+    .post-author {
+      display: flex;
+      margin-left: 80px;
+      align-items: center;
+      font-family: Hind;
+      font-size: 16px;
+      line-height: 1.25;
+      color: rgba(#000000, 0.5);
+    } 
+
+    .author-icon {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+      margin-left: 12px;
+    }
+
+    .name-author {
+      width: 95px;
+      height: 20px;
+      font-family: Hind;
+      font-size: 16px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.25;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ff0d35;
+      margin-left: 10px;
+    }
+
+    .post-wrap p{
+      font-family: Hind;
+      font-size: 20px;
+      line-height: 1.75;
+      color: #000000;
+    }
+
+    .slider {
+      max-width: 900px;
+      margin: 0 -30px;  
+      position: relative;
+    }
+
+    .slick{
+      &-slide img {
+        display: block;
+        width: 100%;
+      }
+
+      &-arrow{
+        width: 50px;
+        height: 50px;
+        border: none;
+        background-color: transparent;
+        top: 50%;
+        margin-top: -25px;
+        position: absolute;
+        outline-color: transparent;
+      }
+ 
+      &-prev {
+        left: 20px;
+        z-index: 10;
+      }
+
+      &-next {
+        right: 20px;
+        z-index: 10;
+        transform: rotate(-180deg);
+      }
+ 
+      &-dots {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 30px;
+        margin: auto;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+      }
+
+      &-dots li {
+        display: inline-block;
+        margin: 0 5px;  
+      }
+
+      &-dots button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #ffffff;
+        display: block;
+        overflow: hidden;
+        text-indent: 10000px;
+        border: none;
+        outline-color: transparent;
+      }
+
+      &-dots .slick-active button {
+        background: #ff0d35;
+      }
+    }   
+  }
+    .post-footer {
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+    
+      &-icon ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    
+      &-icon ul li{
+        display: inline-block;
+        margin: 0 10px;
+      }
+    }
+
+    .reviews{
+
+      &-post {
+        align-items: center;
+        display: flex;
+        font-family: Hind;
+        font-size: 14px;
+        line-height: 1.43;
+        color: #868685;
+      }
+
+      &-icon {
+        width: 26px;
+        height: 16px;
+        object-fit: contain;
+        margin-right: 15px;
+      }
+    }
+  
+  .footer{
+    width: 100%;
+    min-height: 630px;
+    background-color: #000000;
+    text-align: center; 
+    &-title{
+      max-width: 460px;
+      padding-top: 100px;
+      margin: auto;  
+      font-family: Teko;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #ffffff;
+    }
+  
+  .form{
+    max-width: 760px;
+    margin: auto; 
+    display: flex;  
+    flex-wrap: wrap;
+    color: #fff;  
+    justify-content: space-between;  
+    &-group{
+      position: relative; 
+      max-width: 540px;
+      width: 100%;  
+      margin-bottom: 10px;  
+    }
+    &-input {
+      width: 100%; 
+      height: 60px;
+      border-radius: 30px;
+      background-color: #ffffff;
+      padding: 0 20px;  
+    }
+    &-select{
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      height: 24px;
+      margin-top: -12px;
+      border: none;
+
+      img { 
+        margin-right: 10px;
+        width: 27px;  
+        height: 24px; 
+        display: inline-block;
+        vertical-align: middle;
+      }     
+    }
+    
+    .dropdown-toggle, 
+    .dropdown-menu {
+      width: 90px;
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+    .dropdown-menu{
+      display: none;
+      background: #fff;
+      z-index: 100;
+      position: relative
+    }
+    
+
+    .dropdown-menu {
+      list-style: none;
+    }
+   
+    &-setting{
+      margin: 0;  
+      padding: 0; 
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 35px 0 100px;  
+      li {
+        display: inline-block;
+        position: relative; 
+        &:before{
+          content:"";
+          width: 5px; 
+          height: 5px;
+          position: absolute;
+          left: -20px;
+          top: 7px;  
+          display: block; 
+          background: #ffffff;
+          border-radius: 50%;
+
+        }
+        &:first-child:before {
+          background: transparent; 
+        }
+      }
+    }
+    .btn{
+      height: 60px; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;  
+    }
+  }
+  hr {
+    width: 1160px;
+    margin-bottom: 43px; 
+  }
+ 
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    margin: auto;
+  }
+ 
+  .footer-col-3{
+    width: 33.3%;
+    height: 200px;  
+    
+    .social{
+      justify-content: flex-end;
+    
+      &-icon ul li{
+        margin: 0 5px;  
+        
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+    .author {
+      text-align: left;
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+    
+    .name-author {
+      margin-left: 10px;
+    }
+    
+    .list-links{
+      text-align: left;
+ 
+      li a{
+        font-family: Hind;
+        font-size: 14px;
+        line-height: 1.79;
+        color: #ffffff;
+      }
+    }
+    
+    .ninja-email{
+      font-family: Ubuntu;
+      font-size: 14px;
+      line-height: 2.14;
+      text-align: right;
+      color: #ffffff;
+      padding-top: 22px;
+      img{
+        margin-right: 10px;
+        display: inline-block;  
+        vertical-align: middle; 
+      }
+    }
+  }
+    .policy {
+      font-family: Hind;
+      font-size: 14px;
+      line-height: 2.14;
+      color: #868685;
+      float: left;  
+      margin-bottom: 10px;  
+    }
+    .copyright {
+      font-family: Hind;
+      font-size: 14px;
+      line-height: 2.14;
+      text-align: right;
+      color: #868685;
+      float: right;
+    }
+  
+}
+}
